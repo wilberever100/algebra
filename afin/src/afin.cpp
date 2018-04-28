@@ -7,7 +7,7 @@
 using namespace std;
 
 afin::afin(){
-    alfabeto="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    alfabeto="ABCDEFGHIJKLMNOPQRSTUVWXYZ.,-_()abcdefghijklmnopqrstuvwxyz 0123456789";
     generarClave();
 }
 
@@ -42,10 +42,11 @@ string afin::cifrar(string palabra){
     return cifrado;
 }
 
-string afin::descifrar(){
-    //clave_a=clave_a_;
-    //clave_b=clave_b_;
-    descifrado=cifrado;
+string afin::descifrar(string nuevo,int clave_a_,int clave_b_){
+    clave_a=clave_a_;
+    clave_b=clave_b_;
+    //descifrado=cifrado;
+    descifrado=nuevo;
     int* result_euclides=euclides_extendido(clave_a,alfabeto.size());//cout<<"inversa: "<< result_euclides[0];
     int pos;
     for(int i=0; i<descifrado.size();i++){
@@ -60,16 +61,4 @@ string afin::descifrar(){
     return descifrado;
 }
 
-///OPCIONAL PARA AUTODECIFRARSE
-/*string afin::AUTO_descifrar(string palabra){
-    vector<int>result_euclides=euclides_extendido(clave_a,alfabeto.size());//cout<<"inversa: "<< result_euclides[1];
-    int pos;
-    for(int i=0; i<palabra.size();i++){
-        pos=(alfabeto.find(palabra[i])-clave_b);
-        if(pos<0)
-            MOD(pos,alfabeto.size());
-        pos=pos*result_euclides[1];
-        palabra[i]=alfabeto[MOD(pos,alfabeto.size())];
-    }
-    return palabra;
-}*/
+

@@ -14,8 +14,8 @@ public:
     string descifrado;
     afin();
     string cifrar(string);
-    string descifrar();
-    //string AUTO_descifrar(string);///
+    string descifrar(string,int,int);
+
 };
 
 #endif // AFIN_H

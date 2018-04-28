@@ -39,3 +39,23 @@
 	<iostream>
 	<vector>
 
+1524939130 source:c:\users\alumno-a\algebra\afin\main.cpp
+	<iostream>
+	<afin.h>
+	<string>
+
+1524938246 c:\users\alumno-a\algebra\afin\include\afin.h
+	<string>
+
+1524938247 source:c:\users\alumno-a\algebra\afin\src\afin.cpp
+	"afin.h"
+	<string>
+	"euclides.h"
+	<vector>
+	<stdlib.h>
+	<time.h>
+
+1524937196 c:\users\alumno-a\algebra\afin\include\euclides.h
+	<iostream>
+	<vector>
+
