@@ -1,0 +1,21 @@
+#ifndef AFIN_H
+#define AFIN_H
+#include<string>
+using namespace std;
+
+class afin
+{
+private:
+    int clave_a;
+    int clave_b;
+    void generarClave();
+public:
+    string alfabeto,cifrado,palabra;
+    string descifrado;
+    afin();
+    string cifrar(string);
+    string descifrar();
+    //string AUTO_descifrar(string);///
+};
+
+#endif // AFIN_H
