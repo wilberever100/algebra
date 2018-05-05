@@ -7,9 +7,19 @@
 using namespace std;
 
 afin::afin(){
-    alfabeto="ABCDEFGHIJKLMNOPQRSTUVWXYZ.,-_()abcdefghijklmnopqrstuvwxyz 0123456789";
+
     generarClave();
 }
+afin::afin(string k){
+    cout<<cifrar(k)<<endl;
+}
+afin::afin(string mensaje,int a,int b){
+    cout<<descifrar(mensaje,a,b)<<endl;
+}
+
+
+
+
 
 void afin::generarClave(){
     srand (time(NULL));

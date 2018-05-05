@@ -7,8 +7,10 @@ class afin
 {
 private:
     string alfabeto="ABCDEFGHIJKLMNOPQRSTUVWXYZ.,-_()abcdefghijklmnopqrstuvwxyz 0123456789";
+    int n,d,e;
     int clave_a;
     int clave_b;
+    int alfabetolargo=alfabeto.length();
     void generarClave();
 public:
     string cifrado,palabra;

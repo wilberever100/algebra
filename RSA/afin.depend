@@ -79,3 +79,23 @@
 	<iostream>
 	<vector>
 
+1525509301 source:f:\algebra\rsa\main.cpp
+	<iostream>
+	<afin.h>
+	<string>
+
+1525508589 f:\algebra\rsa\include\afin.h
+	<string>
+
+1525509384 source:f:\algebra\rsa\src\afin.cpp
+	"afin.h"
+	<string>
+	"euclides.h"
+	<vector>
+	<stdlib.h>
+	<time.h>
+
+1525509301 f:\algebra\rsa\include\euclides.h
+	<iostream>
+	<vector>
+
