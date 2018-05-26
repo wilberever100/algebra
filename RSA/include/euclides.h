@@ -4,12 +4,32 @@ using namespace std;
 
 
 
+int digitos(int a){
+    int dig=1;
+    while(a/10>0)
+    {
+        a=a/10;
+        dig++;
+    }return dig;
+}
+
 int MOD(int a,int b){
     int r=a-(a/b)*b;
 	if(r<0){
 		r=r+b;
 	}
 	return r;
+}
+int factor(int numero){
+	int i=2;
+	while(i<=numero)
+	{
+		if(MOD(numero,i)==0)  //a%b=0, implica que b es factor de a.
+		{
+			return i;
+		}
+		i++;  //Incrementamos indice.
+	}
 }
 int modulo(int a,int b){
 	int r=a-(a/b)*b;
