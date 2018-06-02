@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1527919133 source:c:\users\wilber\documents\rsazz\main.cpp
+	<NTL/ZZ.h>
+	<string>
+	"RSA.h"
+
+1527918814 source:c:\users\wilber\documents\rsazz\src\rsa.cpp
+	"RSA.h"
+	<../externo.h>
+	<time.h>
+
+1527913067 c:\users\wilber\documents\rsazz\include\rsa.h
+	<NTL/ZZ.h>
+	<string>
+
+1527915027 c:\users\wilber\documents\rsazz\externo.h
+	<iostream>
+	<vector>
+	<NTL/ZZ.h>
+
